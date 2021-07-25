@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Subscribe Button</title>
+	<link rel="stylesheet" href="subscribe.css">
+	<script>
+		function togglePopup(){
+	document.getElementById("popup-1").classList.toggle("active");
+}
+	</script>
+</head>
+<body>
+	<div class="popup" id="popup-1">
+		<div class="overlay"></div>
+		<div class="content">
+			<div class="close-btn" onclick="togglePopup()">&times;</div>
+			<h2>SUBSCRIBE</h2>
+			<p>Join my mailing list to receive updates on the latest blog posts and other things</p>
+    		<input type="text" placeholder="Enter E-mail" name="email" required>
+        	<button class="cancelbtn">Subscribe</button>
+		</div>
+	</div>
+	<div class="button">
+<button onclick="togglePopup()">Subscribe</button>
+</div>
+
+</body>
+</html>
